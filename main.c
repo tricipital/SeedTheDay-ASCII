@@ -13,9 +13,13 @@ void newCMD(char * str){
     fgets(str, MAX, stdin);
 }
 
+
+
 int main(void){
     char command[MAX];
     char stop[] = "stop";
+
+    // Will end loop when user inputs "stop"
     do{
         newCMD(command);
     }while(strncmp(command, stop, 4));
