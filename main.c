@@ -6,6 +6,8 @@
 
 void newCMD(char *);
 
+
+//prompts user for a new command
 void newCMD(char * str){
     printf("Enter a command for your next action: \n");
     fgets(str, MAX, stdin);
